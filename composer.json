@@ -1,5 +1,5 @@
 {
-    "name": "rraspo/estadistica-descriptiva",
+    "name": "rraspo/descriptive-statistics",
     "description": "Laravel package to perform some very very basic statistical operations",
     "type": "library",
     "license": "MIT",
