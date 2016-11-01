@@ -38,8 +38,8 @@ class EstDesc
     }
 
     public static function median($data) {
-		$dataCount = count($array);
-		if ($dataCount > 0) {
+	$dataCount = count($array);
+	if ($dataCount > 0) {
             $middle_index = floor($dataCount / 2);
             sort($array, SORT_NUMERIC);
             $median = $array[$middle_index];
@@ -48,11 +48,11 @@ class EstDesc
                 $median = ($median + $array[$middle_index - 1]) / 2;
             }
             // not even
-            return $median;
-		}
+	    return $median;
+	}
     }
 
-    public static function moda($data) {
+    public static function mode($data) {
     	if (is_array($data)) {
     		$values = array_count_values($valueArray); 
 			return array_search(max($values), $values);
@@ -65,7 +65,7 @@ class EstDesc
     	}
     }
 
-    public static function varianza($data) {
+    public static function variance($data) {
     	if (is_array($data)) {
     		return stats_standard_deviation($data);
     	}
