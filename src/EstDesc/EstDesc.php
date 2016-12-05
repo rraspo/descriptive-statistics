@@ -38,18 +38,18 @@ class EstDesc
     }
 
     public static function median($data) {
-	$dataCount = count($array);
-	if ($dataCount > 0) {
+    	$dataCount = count($data);
+    	if ($dataCount > 0) {
             $middle_index = floor($dataCount / 2);
-            sort($array, SORT_NUMERIC);
-            $median = $array[$middle_index];
+            sort($data, SORT_NUMERIC);
+            $median = $data[$middle_index];
             // if even data
             if ($dataCount % 2 == 0) {
-                $median = ($median + $array[$middle_index - 1]) / 2;
+                $median = ($median + $data[$middle_index - 1]) / 2;
             }
             // not even
-	    return $median;
-	}
+            return $median;
+        }
     }
 
     public static function mode($data) {
